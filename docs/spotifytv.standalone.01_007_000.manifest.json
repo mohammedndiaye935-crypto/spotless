@@ -1,0 +1,50 @@
+{
+  "source_sha256": "6353753dc0bbf761e0c3cfc386302cb71eb5915e8bdbaea06738de01192889a9",
+  "source_size": 2146662,
+  "patched_sha256": "de154aa43832fadfb9eef5e152b511060b7beaeab360aa0f5a2e5e86f0dd1f97",
+  "patched_size": 2150495,
+  "shim_sha256": "80c57dd24fea78fdcb6ca82ae0a1d67a8d3f6834dc02516122ad093f1d5a59d0",
+  "standalone_mode": true,
+  "spotify_version": "01.007.000",
+  "bundle": "ad3ec52",
+  "edits": [
+    {
+      "name": "explicit-standalone-mode",
+      "source_byte_offset": 67,
+      "source_length": 28,
+      "replacement_length": 65
+    },
+    {
+      "name": "install-authenticated-session-shim",
+      "source_byte_offset": 1314812,
+      "source_length": 19,
+      "replacement_length": 3335
+    },
+    {
+      "name": "standalone-needs-linking",
+      "source_byte_offset": 1481498,
+      "source_length": 61,
+      "replacement_length": 147
+    },
+    {
+      "name": "skip-sony-additional-scope",
+      "source_byte_offset": 1546492,
+      "source_length": 116,
+      "replacement_length": 155
+    },
+    {
+      "name": "authenticated-deeplinks",
+      "source_byte_offset": 1547074,
+      "source_length": 314,
+      "replacement_length": 669
+    }
+  ],
+  "limitations": [
+    "UNTESTED on any console. Built from one user-supplied cache dump only.",
+    "Firmware/Spotify combination not covered by upstream Spotless.",
+    "Class/method identity (fG/vG/CG/mG/cG) inferred structurally, not from source maps.",
+    "diagnostic-controller-export omitted (no clean anchor found).",
+    "Native token/profile errors retain original behavior.",
+    "Does not modify system music-card control center."
+  ]
+}
